@@ -1,0 +1,423 @@
+@font-face {
+    src: url("../fonts/Helvetica_Neue.ttf"), url("../fonts/Pacifico-Regular.ttf"), url("../fonts/Raleway-SemiBold.ttf");
+}
+
+body {
+    width: 1600px;
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    font-family: HelveticaNeue, sans-serif;
+
+    color: #848484;
+}
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.page-header {
+    position: relative;
+    min-height: 600px;
+    width: 1600px;
+    background: url("../images/header.jpg") no-repeat top left;
+    background-size: cover;
+    border-top: 10px solid #2ecc71;
+    color: #ffffff;
+}
+
+.header-menu {
+    padding-left: 325px;
+    padding-top: 160px;
+}
+
+.promo-title {
+    margin: 0;
+    font-family: Pacifico, cursive;
+    font-size: 60px;
+    font-weight: normal;
+}
+
+.promo {
+    font-size: 24px;
+    line-height: 36px;
+}
+
+.dot {
+    color: #2ecc71;
+}
+
+.hand {
+    position: absolute;
+    bottom: 0;
+    right: 270px;
+    width: 439px;
+    height: 507px;
+    background: url("../images/hand.png") no-repeat center;
+    background-size: cover;
+}
+
+.phone-picture {
+    position: absolute;
+    bottom: 195px;
+    right: 210px;
+    width: 162px;
+    height: 244px;
+    background: url("../images/header.jpg") no-repeat center;
+    background-size: cover;
+}
+
+.download {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    margin-right: 15px;
+    vertical-align: middle;
+    font-size: 0;
+    background-color: #000000;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 50%;
+    filter: opacity(50%);
+}
+
+.IOS {
+    background-image: url("../images/apple.png");
+}
+
+.android {
+    background-image: url("../images/android.png");
+}
+
+.windows {
+    background-image: url("../images/windows.png");
+}
+
+.download:hover {
+    background-color: #2ecc71;
+    filter: opacity(100%);
+}
+
+.download:active {
+    backckground-color: #2ecc71;
+    filter: contrast(50%);
+}
+
+.features {
+    padding: 60px 0px 60px 210px;
+}
+
+.features ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.feature-item {
+    position: relative;
+    float: left;
+    width: 330px;
+    padding-top: 130px;
+    padding-right: 120px;
+    text-align: center;
+}
+
+.feature-item::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 115px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #2ecc71;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.feature-theme::before {
+    background-image: url("../images/gear.png");
+}
+
+.feature-design::before {
+    background-image: url("../images/star.png");
+}
+
+.feature-audience::before {
+    background-image: url("../images/earth.png");
+}
+
+.feature-title {
+    font-family: "Raleway Semibold";
+    font-size: 22px;
+    color: #000000;
+}
+
+.feature-item p {
+    margin: 0;
+    line-height: 26px;
+}
+
+.feedback {
+    background-color: #e3e3e3;
+    padding: 60px 0 60px 210px;
+}
+
+.feedback-section {
+    float: left;
+    width: 560px;
+    margin-right: 145px;
+}
+
+.feedback-title {
+    font-family: "Raleway Semibold";
+    font-size: 22px;
+    color: #000000;
+}
+
+.feedback-section p {
+    margin: 0;
+    line-height: 26px;
+}
+
+.movie {
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.feedback-form {
+    margin-top: 30px;
+
+}
+
+.feedback-form input {
+    vertical-align: middle;
+    width: 290px;
+    height: 50px;
+    padding: 0;
+    padding-left: 25px;
+    font-size: 18px;
+    border-radius: 10px 0 0 10px;
+    border: 1px solid #c8c8c8;
+}
+
+.feedback-form button {
+    vertical-align: middle;
+    margin-left: -5px;
+    padding: 0;
+    width: 140px;
+    height: 52px;
+    font-size: 22px;
+    color: #ffffff;
+    background-color: #2ecc71;
+    border: none;
+    border-radius: 0 10px 10px 0;
+}
+
+.feedback-form button:hover {
+    background-color: #34ff96;
+}
+
+.feedback-form button:active {
+    background-color: #228d52;
+}
+
+.contact {
+    padding: 60px 0;
+    text-align: center;
+}
+
+.contact blockquote {
+    margin-top: 0;
+    font-size: 18px;
+    font-style: italic;
+    line-height: 30px;
+}
+
+.contact cite {
+    font-family: "Raleway Semibold";
+    font-style: normal;
+    font-size: 18px;
+    color: #000000;
+}
+
+.photos {
+    list-style: none;
+    margin-top: 30px;
+    margin-bottom: 60px;
+}
+
+.photo {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+}
+
+.photo-1 {
+    background: linear-gradient(to right, #ffffff, transparent 75%),
+                url("../images/photo1.jpg") no-repeat top right;
+}
+
+.photo-2 {
+    background: url("../images/photo2.jpg") no-repeat 60% 45%;
+}
+
+
+.photo-3 {
+    background: url("../images/photo3.jpg") no-repeat 30% 25%;
+}
+
+.photo-4 {
+    background: url("../images/photo4.jpg") no-repeat 45% 30%;
+}
+
+.photo-5 {
+    background: url("../images/photo5.jpg") no-repeat 60% 40%;
+}
+
+.photo-6 {
+    background: url("../images/photo6.jpg") no-repeat 60% 30%;
+}
+
+.photo-7 {
+    background: url("../images/photo7.jpg") no-repeat 70% 20%;
+}
+
+.photo-8 {
+    background: url("../images/photo8.jpg") no-repeat 65% 5%;
+}
+
+.photo-9 {
+    background: url("../images/photo9.jpg") no-repeat 60% 10%;
+}
+
+.photo-10 {
+    background: url("../images/photo10.jpg") no-repeat 85% 15%;
+}
+
+.photo-11 {
+    background: url("../images/photo11.jpg") no-repeat 40% 10%;
+}
+
+.photo-12 {
+    background: url("../images/photo12.jpg") no-repeat 60% 60%;
+}
+
+.photo-13 {
+    background: url("../images/photo13.jpg") no-repeat 20% 60%;
+}
+
+.photo-14 {
+    background: url("../images/photo14.jpg") no-repeat 50% 40%;
+}
+
+.photo-15 {
+    background: url("../images/photo15.jpg") no-repeat 35% 50%;
+}
+
+.photo-16 {
+    background: url("../images/photo16.jpg") no-repeat 50% 70%;
+}
+
+.photo-17 {
+    background: url("../images/photo17.jpg") no-repeat 60% 40%;
+}
+
+.photo-18 {
+    background: url("../images/photo18.jpg") no-repeat 40% 30%;
+}
+
+.photo-19 {
+    background: url("../images/photo19.jpg") no-repeat 30% 30%;
+}
+
+.photo-20 {
+    background: url("../images/photo20.jpg") no-repeat 50% 60%;
+}
+
+.photo-21 {
+    background: linear-gradient(to right, transparent  25%, #ffffff),
+                url("../images/photo21.jpg") no-repeat 60% 0;
+}
+
+.photo:hover {
+    box-shadow: inset 0 0 0 25px rgba(46, 204, 113, 0.8);
+}
+
+.photo:active {
+    box-shadow: inset 0 0 0 25px rgba(39, 141, 71, 0.9);
+}
+
+.contact-title {
+    font-family: "Raleway Semibold" ;
+    font-size: 24px;
+    color: #000000;
+}
+
+.social-btn {
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    margin-right: 10px;
+    font-size: 0;
+    vertical-align: middle;
+    background-color: #d4d4d4;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 50%;
+}
+
+.social-btn-tw {
+    background-image: url("../images/twitter.png");
+}
+
+.social-btn-fb {
+    background-image: url("../images/facebook.png");
+}
+
+.social-btn-pint {
+    background-image: url("../images/pinterest.png");
+}
+
+.social-btn-g {
+    background-image: url("../images/google+.png");
+}
+
+.social-btn-lin {
+    background-image: url("../images/linkedin.png");
+}
+
+.social-btn-you {
+    background-image: url("../images/youtube.png");
+}
+
+.social-btn:hover {
+    background-color: #2ecc71;
+}
+
+.social-btn:active {
+    background-color: #258d47;
+}
+
+.page-footer {
+    padding: 60px 0;
+    text-align: center;
+    background-color: #e3e3e3;
+}
+
+.page-footer a {
+    padding-right: 35px;
+    text-decoration: none;
+    color: #848484;
+}
+
+.page-footer a:hover {
+    text-decoration: underline;
+    color: #575757;
+}
+
+.page-footer a:active {
+    color: #000000;
+}
